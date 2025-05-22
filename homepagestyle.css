@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(246, 234, 241);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: rgb(220, 189, 208);
+    padding: 17px 12px;
+}
+
+.logo{
+    height: 50px;
+}
+
+.menu{
+    background-color: rgb(220, 189, 208);
+    padding: 5px;
+}
+
+.menu a{
+    color: rgb(137, 88, 117);
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 20px;
+    padding: 8px 12px;
+    transition: background 0.3s ease;
+}
+
+.menu a:hover{
+    background-color: rgb(255, 240, 253);
+    color: rgb(150, 134, 149);
+    border-radius: 5px;
+}
+
+.content h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
+}
+
+.content p{
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+.images{
+    display: flex;
+    width: 800px;
+    gap: 20px;
+    padding: 10px;
+    margin: auto;
+}
+
+.item{
+    position: relative;
+    flex: 1;
+    text-decoration: none;
+    color: rgb(251, 252, 253);
+}
+
+.item img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.3 ease, filter 0.3 ease;
+}
+
+.item:hover img{
+    transform: scale(1.05);
+    filter: brightness(0.5);
+}
+
+.overlay-text{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.color-personality-test{
+    display: flex; 
+    gap: 20px;
+    background-color: rgb(245, 225, 239);
+    padding: 20px;
+    margin: 40px auto;
+    text-align: center;
+    border-radius: 12px;
+    width: 70%;
+}
+
+.color-personality-test a:hover {
+    background-color: #8e4d72;
+}
+
+.color-personality-test img{
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.test-text h1, h2, h3{
+    font-weight: bold;
+    color: #8e4d72;
+    font-style: oblique;
+}
+
+.test-text p{
+    font-size: 25px;
+    color: #8e4d72;
+    text-align: justify;
+    
+}
+
+.text p{
+    font-size: 20px;
+    color: black;
+    font-weight: normal;
+}
+
+.test-text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.test-text a{
+    text-decoration: none;
+    color: rgb(60, 48, 71);
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 8px;
+    outline: auto;
+    font-weight: bold;
+}
+
+.undertone{
+    background-color: rgb(245, 225, 239);
+    display: block;
+    padding: 20px;
+    margin: 40px auto;
+    width: 70%;
+    border-radius: 12px;
+}
+
+.undertone h1 
+.undertone h2 
+.undertone h3{
+    color: #8e4d72;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.undertone p{
+    margin-bottom: 20px;
+    color: black;
+    line-height: #333;
+}
+
+.undertone ol{
+    margin-left: 20px;
+    color: #333;
+}
+
+.undertone li{
+    margin-bottom: 10px;
+}
+
+.undertone-img{
+    background-color: transparent;
+    display: block;
+    padding: 20px;
+    margin: 40px auto;
+    width: 70%;
+    border-radius: 12px;
+    color: transparent;
+}
+
+.undertone-img img{
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.Influencer {
+    text-align: center;
+    padding: 20px;
+}
+
+.warm h2 {
+    margin-bottom: 20px;
+    color: #7e3b5e;
+}
+
+.influencer-card {
+    display: inline-block;
+    margin: 15px;
+    width: 150px;
+}
+
+.influencer-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #d8bfd8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.influencer-card img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.influencer-card p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #4b3a57;
+}
+
+.neutral h2{
+    margin-bottom: 20px;
+    color: #7e3b5e;
+}
+
+.cool h2{
+    margin-bottom: 20px;
+    color: #7e3b5e;
+}
+
+.skin-type{
+    background-color: rgb(245, 225, 239);
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 12px;
+    width: 70%;
+}
+
+.skin-type img{
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+}
